@@ -1,0 +1,4 @@
+@base_url = http://localhost:5297/
+
+### Teste Hello World
+GET {{base_url}}
