@@ -1,4 +1,157 @@
-@base_url = http://localhost:5297/
+@base_url = http://localhost:5297
 
 ### Teste Hello World
 GET {{base_url}}
+
+### PERSONAS
+# Criar uma persona
+POST {{base_url}}/personas
+Content-Type: application/json
+
+{
+  "nome": "John Doe",
+  "classeId": 1,
+  "inventarioId": 1
+}
+
+# Listar todas as personas
+GET {{base_url}}/personas
+
+# Buscar uma persona por ID
+GET {{base_url}}/personas/1
+
+# Atualizar uma persona
+PUT {{base_url}}/personas/1
+Content-Type: application/json
+
+{
+  "nome": "Jane Doe",
+  "classeId": 1,
+  "inventarioId": 1
+}
+
+# Deletar uma persona
+DELETE {{base_url}}/personas/1
+
+### CLASSES
+# Criar uma classe
+POST {{base_url}}/classes
+Content-Type: application/json
+
+{
+  "nome": "Assault",
+  "descricao": "Classe de ataque rápido",
+  "vida": 8
+}
+
+# Listar todas as classes
+GET {{base_url}}/classes
+
+# Buscar uma classe por ID
+GET {{base_url}}/classes/1
+
+# Atualizar uma classe
+PUT {{base_url}}/classes/1
+Content-Type: application/json
+
+{
+  "nome": "Recon",
+  "descricao": "Especialista em reconhecimento",
+  "vida": 7
+}
+
+# Deletar uma classe
+DELETE {{base_url}}/classes/1
+
+### INVENTÁRIOS
+# Criar um inventário
+POST {{base_url}}/inventarios
+Content-Type: application/json
+
+{
+  "capacidade": 50
+}
+
+# Listar todos os inventários
+GET {{base_url}}/inventarios
+
+# Buscar um inventário por ID
+GET {{base_url}}/inventarios/1
+
+# Atualizar um inventário
+PUT {{base_url}}/inventarios/1
+Content-Type: application/json
+
+{
+  "capacidade": 60
+}
+
+# Deletar um inventário
+DELETE {{base_url}}/inventarios/1
+
+### ITENS
+# Criar um item
+POST {{base_url}}/itens
+Content-Type: application/json
+
+{
+  "nome": "Medkit",
+  "descricao": "Recupera vida",
+  "tipo": 0
+}
+
+# Listar todos os itens
+GET {{base_url}}/itens
+
+# Buscar um item por ID
+GET {{base_url}}/itens/1
+
+# Atualizar um item
+PUT {{base_url}}/itens/1
+Content-Type: application/json
+
+{
+  "nome": "Bandage",
+  "descricao": "Recupera vida parcialmente",
+  "tipo": 0
+}
+
+# Deletar um item
+DELETE {{base_url}}/itens/1
+
+### ARMAS
+# Criar uma arma
+POST {{base_url}}/armas
+Content-Type: application/json
+
+{
+  "nome": "AK-47",
+  "dano": 42.5,
+  "alcance": 300,
+  "tipo": 0,
+  "peso": 3.47
+}
+
+# Listar todas as armas
+GET {{base_url}}/armas
+
+# Buscar uma arma por ID
+GET {{base_url}}/armas/1
+
+# Atualizar uma arma
+PUT {{base_url}}/armas/1
+Content-Type: application/json
+
+{
+  "nome": "M4A1",
+  "dano": 35.0,
+  "alcance": 400,
+  "tipo": 0,
+  "peso": 3.1
+}
+
+# Deletar uma arma
+DELETE {{base_url}}/armas/1
+
+# Filtrar armas por tipo
+GET {{base_url}}/armas/tipo?tipo=0

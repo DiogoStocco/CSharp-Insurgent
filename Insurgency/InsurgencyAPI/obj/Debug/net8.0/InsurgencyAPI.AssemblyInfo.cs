@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InsurgencyAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92ad86bdbc02485698c0e1b47e34596fa1cccd2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed71f81163e77418d833f30bd462cc1401dd39ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("InsurgencyAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InsurgencyAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
